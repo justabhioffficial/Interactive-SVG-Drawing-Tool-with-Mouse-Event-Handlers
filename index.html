@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive SVG Drawing Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🎨 SVG Drawing Tool</h2>
+    <div class="toolbar">
+      <label for="colorPicker">Choose Color:</label>
+      <input type="color" id="colorPicker" value="#007BFF">
+      <label for="brushSize">Brush Size:</label>
+      <select id="brushSize">
+        <option value="2">Thin</option>
+        <option value="4" selected>Medium</option>
+        <option value="6">Thick</option>
+      </select>
+      <button id="clearBtn">Clear Canvas</button>
+    </div>
+    <svg id="drawing-area"></svg>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
